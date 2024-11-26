@@ -51,7 +51,8 @@
     <section class="section-hero section">
       <div class="container hero-container">
         <h1 class="hero-tytle">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-button">Order Service</button>
+        .hero-button.btn:hover,
+        <button type="button" class="hero-button btn">Order Service</button>
       </div>
     </section>
     <!--section advantages-->
@@ -434,14 +435,14 @@
   <!-- Modal window -->
   <div class="backdrop is-open">
     <div class="modal">
+      <button class="modal-btn-close" type="button">
+        <svg class="modal-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <p class="modal-caption">Leave your contacts and we will call you back</p>
+      <!-- Form Name -->
       <form class="modal-form" name="review">
-        <button class="modal-btn-close" type="button">
-          <svg class="modal-icon-close" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="modal-caption">Leave your contacts and we will call you back</p>
-        <!-- Form Name -->
         <div class="modal-form-field">
           <label class="modal-form-label" for="user-name">Name</label>
           <div class="modal-form-wrapper">
@@ -477,9 +478,9 @@
           <textarea class="modal-form-message" name="user-message" id="user-message"
             placeholder="Text input"></textarea>
         </div>
-
+        <!-- Checkbox -->
         <div class="modal-form-agreemant">
-          <input type="checkbox" name="user-agreement" id="user-agreement" checked>
+          <input class="visually-hidden" type="checkbox" name="user-agreement" id="user-agreement">
           <label class="modal-form-agreemant-teaxt" for="user-agreement">
             <span class="modal-form-checkbox">
               <svg class="modal-form-checkbox-icon" width="10" height="8">
@@ -489,6 +490,9 @@
             I accept the terms and conditions of the
             <a class="modal-form-agreement-link" href="#">Privacy
               Policy</a></label>
+        </div>
+        <div class="">
+          <button class="form-button btn" type="button">Send</button>
         </div>
       </form>
     </div>
